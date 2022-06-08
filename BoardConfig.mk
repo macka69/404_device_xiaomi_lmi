@@ -114,6 +114,9 @@ TARGET_KERNEL_CONFIG := lmi_defconfig
 
 KERNEL_LLVM_SUPPORT := true
 
+# Media
+TARGET_USES_ION := true
+
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
 
