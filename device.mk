@@ -1,4 +1,4 @@
-# Copyright (C) 2021 Paranoid Android
+# Copyright (C) 2022 Project 404
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -163,10 +163,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.dpmhalservice.enable=1
 
-# Doze
-PRODUCT_PACKAGES += \
-    ParanoidDoze
-
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     ro.sensor.pickup=xiaomi.sensor.pickup
 
@@ -276,9 +272,8 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    AOSPALmiFrameworks \
-    AOSPALmiSettings \
-    AOSPALmiSystemUI \
+    P404LmiSettings \
+    P404LmiSystemUI \
     LmiFrameworks \
     LmiSystemUI \
     FrameworksResTarget \
