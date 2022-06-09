@@ -22,12 +22,10 @@ PRODUCT_COPY_FILES += \
 
 # Audio
 PRODUCT_PROPERTY_OVERRIDES += \
-    aaudio.mmap_policy=1 \
     persist.audio.button_jack.profile=volume \
     persist.audio.button_jack.switch=0 \
     persist.vendor.audio.hifi=false \
     persist.vendor.audio.ring.filter.mask=0 \
-    persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aptxadaptiver2-aac-ldac-lhdc \
     ro.config.vc_call_vol_steps=11 \
     ro.vendor.audio.afe.record=true \
     ro.vendor.audio.aiasst.support=true \
@@ -38,7 +36,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.audio.multiroute=true \
     ro.vendor.audio.ring.filter=true \
     ro.vendor.audio.scenario.support=true \
-    ro.vendor.audio.sdk.fluencetype=fluence \
     ro.vendor.audio.sfx.audiovisual=true \
     ro.vendor.audio.sfx.earadj=true \
     ro.vendor.audio.sfx.scenario=true \
@@ -51,12 +48,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.audio.voice.change.support=true \
     ro.vendor.audio.voice.change.youme.support=true \
     ro.vendor.audio.voice.volume.boost=none \
-    vendor.audio.adm.buffering.ms=6 \
-    vendor.audio.feature.dynamic_ecns.enable=false \
-    vendor.audio.feature.spkr_prot.enable=false \
-    vendor.audio.hal.output.suspend.supported=false \
     vendor.audio.mic.status=off \
-    vendor.audio.offload.track.enable=false \
     vendor.audio.spkcal.copy.inhal=true \
     vendor.audio.spkr_prot.tx.sampling_rate=48000 \
     vendor.audio.usb.disable.sidetone=true
@@ -151,10 +143,8 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.display.paneltype=2 \
     ro.vendor.display.sensortype=2 \
-    vendor.display.enable_async_powermode=0 \
     vendor.display.qdcm.mode_combine=1 \
-    vendor.display.use_layer_ext=0 \
-    vendor.display.use_smooth_motion=0
+    vendor.display.use_layer_ext=0 
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/display/,$(TARGET_COPY_OUT_VENDOR)/etc)
