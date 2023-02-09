@@ -16,6 +16,8 @@ hal_client_domain(devicesettings_app, hal_motor)
 # Allow devicesettings_app read and write /data/data subdirectory
 allow devicesettings_app system_app_data_file:dir create_dir_perms;
 allow devicesettings_app system_app_data_file:{ file lnk_file } create_file_perms;
+allow devicesettings_app netstats_service:service_manager { find };
+allow devicesettings_app content_capture_service:service_manager { find };
 
 allow devicesettings_app system_data_file:dir { search };
 
