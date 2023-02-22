@@ -4,6 +4,7 @@ persist.vendor.bt.a2dp.aac_whitelist=false
 # Camera
 vendor.camera.aux.packagelist=com.android.camera,org.codeaurora.snapcam
 persist.vendor.camera.privapp.list=com.android.camera
+log.tag.CHIUSECASE=ERROR
 
 # Charger
 ro.charger.enable_suspend=1
